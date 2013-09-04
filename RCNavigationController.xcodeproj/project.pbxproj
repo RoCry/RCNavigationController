@@ -18,6 +18,7 @@
 		C495423617D7418B00A803D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C495423517D7418B00A803D4 /* Default-568h@2x.png */; };
 		C495423917D7418B00A803D4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C495423717D7418B00A803D4 /* MainStoryboard.storyboard */; };
 		C495423C17D7418B00A803D4 /* RCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C495423B17D7418B00A803D4 /* RCViewController.m */; };
+		C495424517D741C200A803D4 /* RCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C495424417D741C200A803D4 /* RCNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		C495423817D7418B00A803D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C495423A17D7418B00A803D4 /* RCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCViewController.h; sourceTree = "<group>"; };
 		C495423B17D7418B00A803D4 /* RCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCViewController.m; sourceTree = "<group>"; };
+		C495424317D741C200A803D4 /* RCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNavigationController.h; sourceTree = "<group>"; };
+		C495424417D741C200A803D4 /* RCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		C495422517D7418B00A803D4 /* RCNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				C495424217D741C200A803D4 /* Sources */,
 				C495422E17D7418B00A803D4 /* RCAppDelegate.h */,
 				C495422F17D7418B00A803D4 /* RCAppDelegate.m */,
 				C495423717D7418B00A803D4 /* MainStoryboard.storyboard */,
@@ -105,6 +109,15 @@
 				C495423517D7418B00A803D4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C495424217D741C200A803D4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C495424317D741C200A803D4 /* RCNavigationController.h */,
+				C495424417D741C200A803D4 /* RCNavigationController.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				C495422C17D7418B00A803D4 /* main.m in Sources */,
 				C495423017D7418B00A803D4 /* RCAppDelegate.m in Sources */,
 				C495423C17D7418B00A803D4 /* RCViewController.m in Sources */,
+				C495424517D741C200A803D4 /* RCNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
