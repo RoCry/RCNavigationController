@@ -6,7 +6,7 @@
 //
 
 @interface RCNavigationController : UINavigationController
-
+@property (nonatomic, assign) BOOL disablePanPop;
 @end
 
 @protocol RCNavigationDelegate <NSObject>

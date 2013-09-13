@@ -84,6 +84,7 @@
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (self.disablePanPop) return NO;
     if (self.preViewImages.count == 0) return NO;
     
     UIViewController<RCNavigationDelegate> *delegate =
