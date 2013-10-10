@@ -54,7 +54,7 @@
 #define IMAGE_SCALE 0.9
 #define DEFAULT_ALPHA .7
 
-@interface RCNavigationController ()<UIGestureRecognizerDelegate>
+@interface RCNavigationController ()
 {
     // setup gesture once when push for every instance
     dispatch_once_t onceToken;

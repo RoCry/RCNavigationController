@@ -5,7 +5,7 @@
 //  Copyright (c) 2013年 RoCry. All rights reserved.
 //
 
-@interface RCNavigationController : UINavigationController
+@interface RCNavigationController : UINavigationController<UIGestureRecognizerDelegate>
 @property (nonatomic, assign) BOOL disablePanPop;
 @end
 
