@@ -72,6 +72,18 @@
 
 @implementation RCNavigationController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // disable iOS7 swipe gesture
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
+    {
+        self.interactivePopGestureRecognizer.enabled = NO;
+    }
+    self.delegate = self;
+}
+
 #pragma mark - Pan pop
 - (void)setupGestureIfNeed {
     dispatch_once(&onceToken, ^{        
@@ -195,8 +207,17 @@
         UIImage *image = [self.view imageFromView];
         [self.preViewImages addObject:image];
     }
+
+    //disable during the pushing animation
+    self.disablePanPop = YES;
     
     [super pushViewController:viewController animated:animated];
+}
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    //enable after the animation
+    self.disablePanPop = NO;
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
